@@ -74,8 +74,8 @@ typedef cryptonote::simple_wallet sw;
 
 #define EXTENDED_LOGS_FILE "wallet_details.log"
 
-#define KEY_IMAGE_EXPORT_FILE_MAGIC "Sumokoin key image export\002"
-#define OUTPUT_EXPORT_FILE_MAGIC "Sumokoin output export\002"
+#define KEY_IMAGE_EXPORT_FILE_MAGIC "Zeon key image export\002"
+#define OUTPUT_EXPORT_FILE_MAGIC "Zeon output export\002"
 
 #define LOCK_IDLE_SCOPE() \
   bool auto_refresh_enabled = m_auto_refresh_enabled.load(std::memory_order_relaxed); \
@@ -1914,7 +1914,7 @@ bool simple_wallet::get_address_from_str(const std::string &str, cryptonote::acc
             std::stringstream prompt;
             prompt << tr("For URL: ") << url
                    << ", " << dnssec_str << std::endl
-                   << tr(" Sumokoin Address = ") << addresses_from_dns[0]
+                   << tr(" Zeon Address = ") << addresses_from_dns[0]
                    << std::endl
                    << tr("Is this OK? (Y/n) ")
             ;
@@ -1934,13 +1934,13 @@ bool simple_wallet::get_address_from_str(const std::string &str, cryptonote::acc
         }
         else
         {
-          fail_msg_writer() << tr("failed to get a Sumokoin address from: ") << url;
+          fail_msg_writer() << tr("failed to get a Zeon address from: ") << url;
           return false;
         }
       }
       else if (addresses_from_dns.size() > 1)
       {
-        fail_msg_writer() << tr("not yet supported: Multiple Sumokoin addresses found for given URL: ") << url;
+        fail_msg_writer() << tr("not yet supported: Multiple Zeon addresses found for given URL: ") << url;
         return false;
       }
       else

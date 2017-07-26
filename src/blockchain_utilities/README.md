@@ -1,4 +1,4 @@
-# Sumokoin Blockchain Utilities
+# Zeon Blockchain Utilities
 
 # Copyright (c) 2016-2017, SUMOKOIN, (forked from) The Monero Project
 

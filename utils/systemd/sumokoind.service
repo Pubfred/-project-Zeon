@@ -1,5 +1,5 @@
 [Unit]
-Description=Sumokoin Full Node
+Description=Zeon Full Node
 After=network.target
 
 [Service]

@@ -413,7 +413,7 @@ namespace dns_utils
     // for now, move on only if one address found
     if (addresses.size() > 1)
     {
-      LOG_ERROR("not yet supported: Multiple Sumokoin addresses found for given URL: " << url);
+      LOG_ERROR("not yet supported: Multiple Zeon addresses found for given URL: " << url);
       return{};
     }
     if (!cli_confirm)
